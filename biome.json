@@ -6,7 +6,8 @@
     "lineWidth": 100
   },
   "linter": {
-    "enabled": true
+    "enabled": true,
+    "ignore": ["**/coverage/**", "**/*.js"]
   },
   "organizeImports": {
     "enabled": false
