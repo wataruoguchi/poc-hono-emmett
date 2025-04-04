@@ -1,0 +1,11 @@
+{
+    "name": "event-sourcing-monorepo",
+    "private": true,
+    "engines": {
+        "pnpm": ">=9"
+    },
+    "scripts": {},
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4"
+    }
+}

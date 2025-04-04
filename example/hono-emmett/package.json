@@ -1,0 +1,17 @@
+{
+  "name": "hono-emmett",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@event-driven-io/emmett": "^0.36.0",
+    "@hono/node-server": "^1.14.0",
+    "hono": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  },
+  "packageManager": "pnpm@8.6.10+sha1.98fe2755061026799bfa30e7dc8d6d48e9c3edf0"
+}
