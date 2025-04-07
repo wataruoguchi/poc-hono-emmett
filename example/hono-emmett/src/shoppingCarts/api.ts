@@ -7,8 +7,21 @@ const connectionString = "postgresql://localhost:5432/postgres";
 const eventStore = getPostgreSQLEventStore(connectionString);
 
 export function shoppingCartsApi(app: Hono) {
-  // What does this do? How does it store the data into the db?
   const handle = DeciderCommandHandler(decider);
+  /**
+   * It creates the following tables:
+   * - emt_global_message_position
+   * - emt_messages
+   * - emt_messages_emt_default
+   * - emt_messages_emt_default_active
+   * - emt_messages_emt_default_archived
+   * - emt_streams
+   * - emt_streams_emt_default
+   * - emt_streams_emt_default_active
+   * - emt_streams_emt_default_archived
+   * - emt_subscriptions
+   * - emt_subscriptions_emt_default
+   */
 
   app.get("/shopping-carts", (c: Context) => {
     return c.text("Hello Hono!");
