@@ -1,7 +1,7 @@
 import { defineConfig } from "kysely-ctl";
 import { PostgresJSDialect } from "kysely-postgres-js";
 import postgres from "postgres";
-import { postgresOptions } from "../src/db.ts";
+import { postgresOptions } from "../src/datastore/db.ts";
 
 const dialect = new PostgresJSDialect({
   postgres: postgres({
