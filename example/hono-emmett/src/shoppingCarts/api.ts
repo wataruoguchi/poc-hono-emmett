@@ -1,10 +1,7 @@
 import { DeciderCommandHandler } from "@event-driven-io/emmett";
-import { getPostgreSQLEventStore } from "@event-driven-io/emmett-postgresql";
 import type { Context, Hono } from "hono";
+import { eventStore } from "../datastore/my-event-store.ts";
 import { decider } from "./service.ts";
-
-const connectionString = "postgresql://localhost:5432/postgres";
-const eventStore = getPostgreSQLEventStore(connectionString);
 
 export function shoppingCartsApi(app: Hono) {
   const handle = DeciderCommandHandler(decider);

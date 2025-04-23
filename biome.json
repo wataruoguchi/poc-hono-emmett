@@ -7,7 +7,7 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": ["**/coverage/**", "**/*.js"]
+    "ignore": ["**/coverage/**", "**/*.js", "**/db/migrations/*.ts"]
   },
   "organizeImports": {
     "enabled": false

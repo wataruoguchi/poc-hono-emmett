@@ -8,7 +8,8 @@
     "format": "biome format --write .",
     "lint": "biome lint --write .",
     "prepare": "husky",
-    "test": "pnpm --filter '*' test"
+    "test": "pnpm --filter '*' test",
+    "build": "pnpm --filter '*' build"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

@@ -1,0 +1,40 @@
+{
+  "name": "emmett-event-store-adaptor",
+  "author": "Wataru Oguchi <wataru.oguchi@gmail.com>",
+  "description": "Emmett event store adaptor, inspired by all the event store modules in the ecosystem.",
+  "license": "MIT",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/emmett-event-store-adaptor.es.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/emmett-event-store-adaptor.cjs.js"
+      }
+    }
+  },
+  "main": "dist/emmett-event-store-adaptor.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@vitest/coverage-v8": "3.1.1",
+    "camelcase": "^8.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.1",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "@event-driven-io/emmett": "^0.36.0"
+  }
+}
